@@ -22,4 +22,12 @@
 				);
 			}
 		}
+
+		public function testCatCanNotSwim()
+		{
+			$this->expectException(
+				Exception::class
+			);
+			Zoo::factory('cat')->swim();
+		}
 	}
