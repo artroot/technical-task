@@ -30,4 +30,12 @@
 			);
 			Zoo::factory('cat')->swim();
 		}
+
+		public function testZooReturnExceptionOnNotFoundAnimal()
+		{
+			$this->expectException(
+				Exception::class
+			);
+			Zoo::factory('tiger');
+		}
 	}
