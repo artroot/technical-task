@@ -1,0 +1,16 @@
+{
+    "authors": [
+        {
+            "name": "Artem Semenishch",
+            "email": "a.semenishch@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^6.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtemSemenishch\\App\\": "app"
+        }
+    }
+}
