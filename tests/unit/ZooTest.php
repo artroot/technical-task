@@ -11,4 +11,15 @@
 				Zoo::factory('cat')
 			);
 		}
+
+		public function testEachAnimalCanEat()
+		{
+			$animals = ['cat', 'dog', 'crocodile', 'sparrow'];
+
+			foreach ($animals as $animal){
+				$this->assertTrue(
+					is_string(Zoo::factory($animal)->eat('food'))
+				);
+			}
+		}
 	}
